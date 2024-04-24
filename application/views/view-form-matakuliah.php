@@ -21,14 +21,20 @@ method="post">
         <th>Kode MTK</th>
         <th>:</th>
     <td>
-            <input type="text" name="kode" id="kode">
+            <input type="text" name="kode" id="kode" 
+            class="<?= form_error('kode') ? 'invalid' :''?>"
+                placeholder="isikan data" value="<?= set_value('kode') ?>" />
+                <div class="invalid-feedback"><?= form_error('kode') ?></div>
     </td>
     </tr>
     <tr>
             <th>Nama MTK</th>
             <td>:</td>
             <td>
-            <input type="text" name="nama" id="nama">
+            <input type="text" name="nama" id="nama" 
+            class="<?= form_error('nama') ? 'invalid' :''?>"
+                placeholder="isikan data" value="<?= set_value('nama') ?>" />
+                <div class="invalid-feedback"><?= form_error('nama') ?></div>
             </td>
             </tr>
             <tr>
