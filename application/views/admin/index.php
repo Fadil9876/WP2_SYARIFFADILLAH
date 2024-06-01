@@ -31,7 +31,7 @@ class="fas fa-users fa-3x text-warning"></i></a>
  $where = ['stok != 0'];
  $totalstok = $this->ModelBuku->total('stok', 
 $where);
-echo $totalstok;
+ echo $totalstok;
  ?>
  </div>
  </div>
@@ -66,7 +66,6 @@ $where);
  </div>
  <div class="col-xl-3 col-md-6 mb-4">
  <div class="card border-left-warning shadow h-100 py-2 bgsuccess">
-
  <div class="card-body">
  <div class="row no-gutters align-items-center">
  <div class="col mr-2">
@@ -74,8 +73,7 @@ $where);
  <div class="h1 mb-0 font-weight-bold text-white">
  <?php
  $where = ['dibooking !=0'];
- $totaldibooking = $this->ModelBuku-
->total('dibooking', $where);
+ $totaldibooking = $this->ModelBuku->total('dibooking', $where);
  echo $totaldibooking;
  ?>
  </div>
@@ -103,7 +101,6 @@ base_url('user/data_user'); ?>"><i class="fas fa-search mt-2 floatright"> Tampi
  <table class="table mt-3">
  <thead>
  <tr>
-
  <th>#</th>
  <th>Nama Anggota</th>
  <th>Email</th>
@@ -143,7 +140,6 @@ text-primary mt-2 float-right"> Tampilkan</i></a>
  <th>Judul Buku</th>
  <th>Pengarang</th>
  <th>Penerbit</th>
-
  <th>Tahun Terbit</th>
  <th>ISBN</th>
  <th>Stok</th>
@@ -172,4 +168,4 @@ text-primary mt-2 float-right"> Tampilkan</i></a>
 </div>
 <!-- /.container-fluid -->
 </div>
-<!-- End of Main Content -->
+<!-- End of Main Content --
